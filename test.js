@@ -14,7 +14,7 @@ for (let i = 0; i < mas2.length; i++) {
 // iteracijoje atspausdinti indeksą ir jo reikšmę, jeigu ta reikšmė yra lyginė (porinė)
 const mas3 = [889, 52, 698, 752, 9333, 7];
 for (let i = 0; i < mas3.length; i++) {
-    if (mas3[i] / 2 === 0) {
+    if (mas3[i] % 2 === 0) {
         console.log(mas3[i]);
     }
 }
