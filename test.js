@@ -64,3 +64,16 @@ console.log("--------------");
 
 //9. Sukurti klasę Grybas. Klasėje sukurti savybė tipas. Iš klasės sukurti
 // 3 Grybo objektus, savybei tipas priskiriant "Baravykas", "Ūmedė" ir "Lepšis"
+
+class Grybas {
+    constructor(savybe) {
+        this.savybe = savybe
+    }
+}
+
+let baravykas = new Grybas("Baravykas")
+let umede = new Grybas("Ūmėdė")
+let lepsis = new Grybas("Lepšis")
+
+
+console.log(baravykas, umede, lepsis)
