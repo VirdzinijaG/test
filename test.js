@@ -29,9 +29,13 @@ const mas4 = ['Agurkas', 'Bananas', 'arbūzas', 'Bebras', 'Voverė', 'Ąžuolas'
 mas4.forEach((value, index)=>{
     if(value.charAt(0) === "A" || value.charAt(0) === "a") {console.log(index,value)}
 })
+console.log("--------------");
 
 //5. Duotas stringas, suskaičiuoti kiek stringe yra raidžių z
 const str1 = 'Storas zebras, bėga nuo zuulu genties nedžiotojų.';
+
+var count = (str1.match(/z/g) || []).length;
+console.log(count);
 
 //6. Duotas Setas, į kurį reikia pridėti reikšmes (stringus) 'Labas' ir 'Ate' ir console.log
 // atspausdinti Seto ilgį
