@@ -36,10 +36,17 @@ const str1 = 'Storas zebras, bėga nuo zuulu genties nedžiotojų.';
 
 var count = (str1.match(/z/g) || []).length;
 console.log(count);
+console.log("--------------");
 
 //6. Duotas Setas, į kurį reikia pridėti reikšmes (stringus) 'Labas' ir 'Ate' ir console.log
 // atspausdinti Seto ilgį
 const set1 = new Set(['Labas', 'Vakaras', 'Rytas', 'Valio']);
+
+set1.add("Labas1");
+set1.add("Ate");
+console.log(set1);
+console.log(set1.size);
+console.log("--------------");
 
 //7. Suprototaipinti standartinį String tipo objektą, pridedant metodą lastCharIs(), 
 // kuris grąžintų paskutinį stringo simbolį. Pademonstruoti veikimą su stringu 'Ku Ku';
