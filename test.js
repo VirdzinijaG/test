@@ -26,8 +26,8 @@ console.log("--------------");
 // iteracijoje atspausdinti indeksą ir jo reikšmę, jeigu ta reikšmė prasideda raide A arba a
 const mas4 = ['Agurkas', 'Bananas', 'arbūzas', 'Bebras', 'Voverė', 'Ąžuolas', 'Mažas triušis'];
 
-mas4.forEach((value, index)=>{
-    if(value.charAt(0) === "A" || value.charAt(0) === "a") {console.log(index,value)}
+mas4.forEach((value, index) => {
+    if (value.charAt(0) === "A" || value.charAt(0) === "a") { console.log(index, value) }
 })
 console.log("--------------");
 
@@ -57,6 +57,10 @@ const str2 = 'Ku ku';
 // ir jos reikšmę
 const obj1 = { labas: 'vakaras', laba: 'diena', labs: 'ryts' };
 
+for (const property in obj1) {
+    console.log(`${property}: ${obj1[property]}`);
+}
+console.log("--------------");
 
 //9. Sukurti klasę Grybas. Klasėje sukurti savybė tipas. Iš klasės sukurti
 // 3 Grybo objektus, savybei tipas priskiriant "Baravykas", "Ūmedė" ir "Lepšis"
