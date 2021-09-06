@@ -2,6 +2,7 @@
 const mas1 = [12, 5, 9, 7, 5, 4];
 
 console.log(mas1.length);
+console.log("--------------");
 
 //2. Duotas masyvas, masyvą iteruoti ciklu for ir console.log kiekvienoje
 // iteracijoje atspausdinti indeksą ir jo reikšmę;
@@ -10,6 +11,7 @@ const mas2 = [13, '785', 92, 'labas', 522, 6984];
 for (let i = 0; i < mas2.length; i++) {
     console.log(mas2[i]);
 }
+console.log("--------------");
 //3. Duotas masyvas, masyvą iteruoti ciklu for ir console.log kiekvienoje
 // iteracijoje atspausdinti indeksą ir jo reikšmę, jeigu ta reikšmė yra lyginė (porinė)
 const mas3 = [889, 52, 698, 752, 9333, 7];
@@ -18,11 +20,15 @@ for (let i = 0; i < mas3.length; i++) {
         console.log(mas3[i]);
     }
 }
-
+console.log("--------------");
 
 //4. Duotas masyvas, masyvą iteruoti ciklu forEach ir console.log kiekvienoje
 // iteracijoje atspausdinti indeksą ir jo reikšmę, jeigu ta reikšmė prasideda raide A arba a
 const mas4 = ['Agurkas', 'Bananas', 'arbūzas', 'Bebras', 'Voverė', 'Ąžuolas', 'Mažas triušis'];
+
+mas4.forEach((value, index)=>{
+    if(value.charAt(0) === "A" || value.charAt(0) === "a") {console.log(index,value)}
+})
 
 //5. Duotas stringas, suskaičiuoti kiek stringe yra raidžių z
 const str1 = 'Storas zebras, bėga nuo zuulu genties nedžiotojų.';
